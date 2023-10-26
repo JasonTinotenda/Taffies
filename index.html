@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Taffies.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<style>
+  body,h1 {font-family: "Raleway", sans-serif}
+  body, html {height: 100%}
+  .bgimg {
+    background-image: url('images/wallpaper.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;   
+  }
+  .logo{
+    height: 150px;
+    border-radius: 12px;
+    @media screen {max-width: 600px }
+        
+  }
+  .w3-footer{
+    background-color: grey;
+  }
+  
+  </style>
+<body>
+  <section>
+    <nav>
+      <div class="w3-bar w3-grey">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="blog.html" class="w3-bar-item w3-button w3-hide-small">Blog</a>
+        <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small">Gallery</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+      </div>      
+      <div id="demo" class="w3-bar-block w3-grey w3-hide w3-hide-large w3-hide-medium">
+        <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+      </div> 
+  </nav>
+  </section>
+  <div class="bgimg w3-display-container w3-greyscale w3-animate-opacity w3-text-black">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      <img  class="logo w3-greyscale" alt="Logo" src="images/taffies.jpg" >
+    </div> 
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">Taffies..</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:100%">
+      <p class="w3-large w3-center"> We breed, sell, process and market <em>rabbits</em>!!!
+      </p><br>
+      <p class="w3-large w3-center"><h2>AIM</h2></p>
+      <hr class="w3-border-grey" style="margin:auto;width:100%">
+      <p class="w3-large w3-center"> <ul>
+        <li>To promote ,develop and improve rabbits production in Zimbabwe.</li>
+        <li>Improve health and welfare of domestic rabbits through campaigns and education.</li>
+        <li>We ensure proper and healthy meat onto the market.</li> 
+        <li>Creating wealth.</li>
+        <li>Generating employment.</li>                       
+    </ul></p> <br>   
+    </div> 
+</div>
+<footer class="w3-footer">
+  <div class="w3-row w3-padding-32">
+    <p class="w3-large w3-center"><h2>Contact Information</h2></p>
+    <div class="w3-col m6 w3-large w3-margin-bottom">
+      <i class="fa fa-map-marker" style="width:30px"></i> Harare, Zimbabwe<br>
+      <i class="fa fa-phone" style="width:30px"></i> Phone: +263771812268<br>
+      <i class="fa fa-envelope" style="width:30px"> </i> Email: zinyama53@gmail.com<br>
+      <i class="fa fa-facebook" style="width:30px;"></i>Facebook: Https://www.Facebook.com/taffies rabbits<br>
+    </div>
+    <div class="w3-col m6">
+      <form action="mailto:zinyama53@gmail.com?subject=Comment" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
+        <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+      </form>
+    </div>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by Dutchman Inc</a>
+  </div>
+</footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>
